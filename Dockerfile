@@ -1,5 +1,9 @@
-FROM gcc:latest
+FROM python:3.11-slim
+
 WORKDIR /app
+
+RUN pip install --no-cache-dir psutil
+
 COPY . .
-RUN g++ -o engine main.cpp
-CMD ["./engine"]
+
+ENTRYPOINT ["python", "src/main.py"]
