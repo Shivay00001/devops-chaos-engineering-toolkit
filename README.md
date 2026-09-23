@@ -39,7 +39,20 @@ Follow standard installation steps for `HTML` to set up the project locally:
 
 ## 💻 Usage
 
-Run the project using standard execution commands for `HTML`. Ensure all environment variables and configurations are set prior to execution.
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Inject faults
+python src/main.py --fault cpu --duration 10 --param 2        # stress 2 CPU cores
+python src/main.py --fault memory --duration 10 --param 500   # consume 500 MB RAM
+python src/main.py --fault latency --duration 10 --param 200  # simulate 200 ms lag
+python src/main.py --fault disk --duration 10 --param 100     # write 100 MB mock files
+
+# Docker
+docker build -t chaos-toolkit .
+docker run --rm chaos-toolkit --fault cpu --duration 5
+```
 
 ## 🤝 Contributing
 

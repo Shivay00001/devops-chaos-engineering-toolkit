@@ -1,5 +1,5 @@
 import argparse
-from src.chaos_agent import ChaosAgent
+from chaos_agent import ChaosAgent
 
 def main():
     parser = argparse.ArgumentParser(description="Chaos Engineering Toolkit")
