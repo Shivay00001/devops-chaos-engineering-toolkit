@@ -1,5 +1,7 @@
 # Devops Chaos Engineering Toolkit
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 Chaos engineering toolkit: Python agents, C++ core, Docker, CI/CD.
 
 ![Language](https://img.shields.io/badge/Language-HTML-blue)
